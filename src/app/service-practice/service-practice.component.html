@@ -1,0 +1,49 @@
+<form>
+    <label>Name:</label>
+    <input name="myname" [(ngModel)]="practiceObj.name" type="text">
+    <br>
+    <label>enter id for delete:</label>
+    <input name="myname" [(ngModel)]="practiceObj.id" type="text">
+    <br>
+    <label>Email:</label>
+    <input name="email" [(ngModel)]="practiceObj.email" type="text">
+    <br>
+    <label>Address:</label>
+    <input name="address" [(ngModel)]="practiceObj.address" type="text">
+    <br>
+    <label>Price:</label>
+    <input name="Price" [(ngModel)]="practiceObj.price" type="text">
+
+
+    <button type="submit" (click)="onClick()">Save</button>
+    <br>
+    <button type="submit" class="btn btn-block" (click)="edit()">EDI</button>
+    <br>
+    <button type="submit" class="btn btn-block" (click)="update()">update</button>
+    <br>
+    <button type="submit" class="btn btn-block" (click)="delete()">delete</button>
+    <br>
+    <button type="submit" class="btn btn-block" (click)="getAll()">Get All Data</button>
+
+</form>
+<br>
+<table>
+
+    <tr *ngFor="let data of dataArray; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.address}}</td>
+        <td>{{data.price}}</td>
+        <td>    <button type="submit" class="btn btn-block" (click)="Onformcomponent(data.id)">edit</button>
+        </td>
+        <br>
+        <td>    <button type="submit" class="btn btn-block" (click)="delete(data.id)">Delete</button>
+        </td>
+    </tr>
+
+    <tr >
+        <td colspan="7">Total amount of all users: {{total}}</td>
+    </tr>
+
+</table> 

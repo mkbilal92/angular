@@ -1,0 +1,36 @@
+<p>myfirstcomponent works!</p>
+
+<!--<input type="number" [(ngModel)]="number1">-->
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-user" style="line-height: 1.25;"></i></span>
+             <input type="text" label="name" [(ngModel)]="total" pInputText placeholder="Username"> 
+                 
+             <!-- <input type="text" label="name" [(ngModel)]="test" pInputText placeholder="Username"> 
+              -->
+        </div> 
+    </div>
+    </div>
+    <button  (click)="showCosole('1')" pButton type="button" label="1" class="ui-button-success"></button>
+    <button  (click)="showCosole('2')" pButton type="button" label="2" class="ui-button-success"></button>
+    <button  (click)="showCosole('3')" pButton type="button" label="3" class="ui-button-success"></button>
+    <button  (click)="showCosole('4')" pButton type="button" label="4" class="ui-button-success"></button>
+    <button  (click)="showCosole('5')" pButton type="button" label="5" class="ui-button-success"></button>
+    <button  (click)="showCosole('6')" pButton type="button" label="6" class="ui-button-success"></button>
+    <button  (click)="showCosole('7')" pButton type="button" label="7" class="ui-button-success"></button>
+    <button  (click)="showCosole('8')" pButton type="button" label="8" class="ui-button-success"></button>
+    <button  (click)="showCosole('9')" pButton type="button" label="9" class="ui-button-success"></button>
+    <button  (click)="showCosole('0')" pButton type="button" label="0" class="ui-button-success"></button>
+    <div>
+        <br>
+    <button  (click)="addOperator('+')" pButton type="button" label="+"  class="ui-button-success"></button>&nbsp;
+    <button  (click)="addOperator('-')" pButton type="button" label="-"  class="ui-button-success"></button>&nbsp;
+    <button  (click)="addOperator('*')" pButton type="button" label="*"  class="ui-button-success"></button>&nbsp;
+    <button  (click)="addOperator('/')" pButton type="button" label="/"  class="ui-button-success"></button>&nbsp;
+</div>
+<!--<input type="number" [(ngModel)]="number2">-->
+<p>{{test}}</p>
+<!-- <h1>{{total}}</h1> -->
+<!-- <button (click)="showCosole()">button</button> -->
+<button  (click)="showResult()" pButton type="button" label="Success" class="ui-button-success"></button>

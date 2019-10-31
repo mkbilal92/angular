@@ -1,0 +1,20 @@
+<form>
+        <label>Name:</label>
+        <input name="name" [(ngModel)]="practiceObj.name" type="text">
+        <br>
+        <label>enter id for delete:</label>
+        <input name="id" [(ngModel)]="practiceObj.id" type="text">
+        <br>
+        <label>Email:</label>
+        <input name="email" [(ngModel)]="practiceObj.email" type="text">
+        <br>
+        <label>Address:</label>
+        <input name="address" [(ngModel)]="practiceObj.address" type="text">
+        <br>        
+        <label>Price:</label>
+        <input name="Price" [(ngModel)]="practiceObj.Price" type="text">
+
+        <button type="submit" (click)="onClick()">Save</button>
+       
+    
+    </form>
